@@ -1,0 +1,35 @@
+<div class="sidebar" id="sidebar">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('sidebar', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <!-- #sidebar-shortcuts -->
+    <ul class="nav nav-list" id="nav_list">
+        <li class="home">
+            <a href="javascript:void(0)" name="home.html" class="iframeurl" title="">
+                <i class="icon-home"></i>
+                <span class="menu-text"> 系统首页 </span>
+            </a>
+        </li>
+        <li th:each="menu : ${menuList}">
+            <a href="#" class="dropdown-toggle">
+                <i th:class="${menu.icon}"></i>
+                <span class="menu-text" th:text="${menu.name}"></span>
+                <b class="arrow icon-angle-down"></b>
+            </a>
+            <ul class="submenu">
+                <li class="home" style="margin-left: 15px;" th:each="subMenu : ${menu.menuList}">
+                    <a href="javascript:void(0)" name="" th:name="${#httpServletRequest.getAttribute('ctx')!=null ? #httpServletRequest.getAttribute('ctx') : '' +subMenu.url}"  title=""  th:title="${subMenu.name}"  class="iframeurl">
+                        <i th:class="${subMenu.icon}" style="display: block;"/>
+                        <p th:text="${subMenu.name}"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="sidebar-collapse" id="sidebar-collapse">
+        <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+16:57:10.598 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+16:57:10.607 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+16:57:10.607 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+16:57:10.608 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+16:57:10.608 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+16:57:16.548 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/user/list
+16:57:16.548 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+16:57:16.548 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+16:57:16.548 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.UserController.list
+16:57:16.549 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+16:57:16.558 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"trueName":"admin","isLock":0,"loginTime":1483606630000,"createTime":1460690618000,"loginIp":"0:0:0:0:0:0:0:1","mobile":"13428281893","updateTime":1463045284000,"remark":null,"userId":"1","account":"admin","email":"123456@qq.com"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+16:58:47.617 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/menu/add
+16:58:47.618 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+16:58:47.618 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+16:58:47.618 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.MenuController.add
+16:58:47.622 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"isDelete":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"menuId":null,"name":"商品分类","url":null,"type":0,"icon":null,"isShow":1,"seq":null,"parentId":"6","parentName":null}]
+16:58:47.641 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":null,"page":null,"code":0,"msg":"添加成功"}
+17:13:52.269 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 23780 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:13:52.272 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:13:56.891 [main] INFO  com.lew.jlight.web.Application - Started Application in 5.168 seconds (JVM running for 6.261)
+17:14:05.696 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+17:14:05.697 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+17:14:05.697 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+17:14:05.697 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+17:14:05.697 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+17:14:24.184 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/menu/add
+17:14:24.184 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:14:24.184 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:14:24.184 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.MenuController.add
+17:14:24.346 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"isDelete":null,"createBy":null,"createTime":null,"updateBy":null,"updateTime":null,"remark":null,"menuId":null,"name":"testmenu","url":null,"type":0,"icon":null,"isShow":1,"seq":null,"parentId":"6","parentName":null}]
+17:18:21.000 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":null,"page":null,"code":0,"msg":"添加成功"}
+17:45:24.698 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 22792 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:45:24.703 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:45:28.802 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.499 seconds (JVM running for 5.028)
+17:45:45.412 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+17:45:45.412 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+17:45:45.412 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+17:45:45.412 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+17:45:45.412 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+17:45:48.894 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/user/list
+17:45:48.894 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:45:48.894 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:45:48.894 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.UserController.list
+17:45:49.041 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:45:49.088 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"trueName":"admin","isLock":0,"loginTime":1483609545000,"createTime":1460690618000,"loginIp":"0:0:0:0:0:0:0:1","mobile":"13428281893","updateTime":1463045284000,"remark":null,"userId":"1","account":"admin","email":"123456@qq.com"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:45:52.899 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/role/list
+17:45:52.899 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:45:52.899 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:45:52.899 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleController.list
+17:45:52.899 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:45:52.911 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":"0","createTime":1460690460000,"updateBy":"0","updateTime":1478586833000,"remark":"超级管理员","roleId":"1","name":"超级管理员","sign":"admin"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:45:55.171 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/role/list
+17:45:55.171 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:45:55.172 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:45:55.172 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleController.list
+17:45:55.172 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:45:55.182 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":"0","createTime":1460690460000,"updateBy":"0","updateTime":1478586833000,"remark":"超级管理员","roleId":"1","name":"超级管理员","sign":"admin"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:46:12.765 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/roleMenu/add
+17:46:12.765 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:46:12.765 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:46:12.765 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleMenuController.add
+17:46:12.768 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - ARGS : ["1",["1","2","12","13","20","1480978838674","1479219411962","1479219651971","3","14","16","21","22","1479219802326","4","1479220122402","1478700606660","1480224173523","1480254855433","5","23","1479220072000","24","6","87398290914835204562523","87398290914836076643583"]]
+17:46:12.881 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":null,"page":null,"code":0,"msg":null}
+17:48:01.105 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/user/list
+17:48:01.105 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:48:01.105 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:48:01.106 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.UserController.list
+17:48:01.106 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:48:01.115 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"trueName":"admin","isLock":0,"loginTime":1483609545000,"createTime":1460690618000,"loginIp":"0:0:0:0:0:0:0:1","mobile":"13428281893","updateTime":1463045284000,"remark":null,"userId":"1","account":"admin","email":"123456@qq.com"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:48:09.717 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/role/list
+17:48:09.718 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:48:09.718 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:48:09.718 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleController.list
+17:48:09.718 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:48:09.727 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":"0","createTime":1460690460000,"updateBy":"0","updateTime":1478586833000,"remark":"超级管理员","roleId":"1","name":"超级管理员","sign":"admin"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:48:30.294 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/roleMenu/add
+17:48:30.295 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:48:30.295 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:48:30.295 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleMenuController.add
+17:48:30.295 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - ARGS : ["1",["1","2","12","13","20","1480978838674","1479219411962","1479219651971","3","14","16","21","22","1479219802326","4","1479220122402","1478700606660","1480224173523","1480254855433","5","23","1479220072000","24","6","87398290914835204562523","873982909148360672763410","87398290914836076643583"]]
+17:48:30.399 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":null,"page":null,"code":0,"msg":null}
+17:57:38.368 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/role/list
+17:57:38.368 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:57:38.368 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:57:38.368 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.RoleController.list
+17:57:38.369 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:57:38.377 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":"0","createTime":1460690460000,"updateBy":"0","updateTime":1478586833000,"remark":"超级管理员","roleId":"1","name":"超级管理员","sign":"admin"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:57:38.721 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/user/list
+17:57:38.721 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:57:38.721 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:57:38.721 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.UserController.list
+17:57:38.721 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:57:38.729 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"trueName":"admin","isLock":0,"loginTime":1483609545000,"createTime":1460690618000,"loginIp":"0:0:0:0:0:0:0:1","mobile":"13428281893","updateTime":1463045284000,"remark":null,"userId":"1","account":"admin","email":"123456@qq.com"}],"page":{"resultCount":1,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:57:49.468 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/loginLog/list
+17:57:49.468 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:57:49.468 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:57:49.468 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.LoginLogController.list
+17:57:49.469 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:57:49.479 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":null,"createTime":1483609545000,"updateBy":null,"updateTime":1483609545000,"remark":null,"loginLogId":"87398290914836095457491","loginAccount":"admin","loginTime":1483609545000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483607646000,"updateBy":null,"updateTime":1483607646000,"remark":null,"loginLogId":"87398290914836076460621","loginAccount":"admin","loginTime":1483607646000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483606630000,"updateBy":null,"updateTime":1483606630000,"remark":null,"loginLogId":"87398290914836066306457","loginAccount":"admin","loginTime":1483606630000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483520945000,"updateBy":null,"updateTime":1483520945000,"remark":null,"loginLogId":"87398290914835209459511","loginAccount":"admin","loginTime":1483520945000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483520439000,"updateBy":null,"updateTime":1483520439000,"remark":null,"loginLogId":"87398290914835204395051","loginAccount":"admin","loginTime":1483520439000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"}],"page":{"resultCount":5,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:57:50.798 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/loginLog/list
+17:57:50.798 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:57:50.798 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:57:50.798 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.LoginLogController.list
+17:57:50.799 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":5,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:57:50.820 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"isDelete":0,"createBy":null,"createTime":1483609545000,"updateBy":null,"updateTime":1483609545000,"remark":null,"loginLogId":"87398290914836095457491","loginAccount":"admin","loginTime":1483609545000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483607646000,"updateBy":null,"updateTime":1483607646000,"remark":null,"loginLogId":"87398290914836076460621","loginAccount":"admin","loginTime":1483607646000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483606630000,"updateBy":null,"updateTime":1483606630000,"remark":null,"loginLogId":"87398290914836066306457","loginAccount":"admin","loginTime":1483606630000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483520945000,"updateBy":null,"updateTime":1483520945000,"remark":null,"loginLogId":"87398290914835209459511","loginAccount":"admin","loginTime":1483520945000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"},{"isDelete":0,"createBy":null,"createTime":1483520439000,"updateBy":null,"updateTime":1483520439000,"remark":null,"loginLogId":"87398290914835204395051","loginAccount":"admin","loginTime":1483520439000,"loginIp":"0:0:0:0:0:0:0:1","status":"登录成功"}],"page":{"resultCount":5,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:58:34.433 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/menu/delete
+17:58:34.434 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:58:34.434 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:58:34.434 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.MenuController.delete
+17:58:34.434 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [["87398290914836076643583"]]
+17:58:34.452 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":null,"page":null,"code":0,"msg":"删除成功"}

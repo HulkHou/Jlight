@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jlight-assembly/jlight-assembly.iml" filepath="$PROJECT_DIR$/jlight-assembly/jlight-assembly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlight-core/jlight-core.iml" filepath="$PROJECT_DIR$/jlight-core/jlight-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlight-mybatis/jlight-mybatis.iml" filepath="$PROJECT_DIR$/jlight-mybatis/jlight-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlight-parent.iml" filepath="$PROJECT_DIR$/jlight-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlight-web/jlight-web.iml" filepath="$PROJECT_DIR$/jlight-web/jlight-web.iml" />
+    </modules>
+  </component>
+</project>
