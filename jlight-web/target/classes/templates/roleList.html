@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ng-app="roleApp" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <header th:replace="importCommon"></header>
+    <link rel="stylesheet" th:href="@{/assets/jstree/themes/default/style.css}" />
+    <link rel="stylesheet" th:href="@{/css/role.css}" />
+    <script th:src="@{/js/common/customValid.js}"></script>
+    <script th:src="@{/js/common/FormDirective.js}"></script>
+    <script th:src="@{/js/common/util.js}"></script>
+    <script th:src="@{/js/system/controller/RoleCtrl.js}"></script>
+    <script th:src="@{/js/system/service/RoleService.js}"></script>
+    <script th:src="@{/js/system/service/RoleResService.js}"></script>
+    <script th:src="@{/assets/jstree/jstree.min.js}"></script>
+    <script th:src="@{/assets/jstree/jstree.checkbox.js}"></script>
+    <script th:src="@{/assets/jstree/checkboxTree.js}" type="text/javascript"></script>
+    <script th:src="@{/assets/underscore/underscore-min.js}"></script>
+    <title>角色管理</title>
+</head>
+<body ng-controller="roleCtrl">
+<div class="page-content">
+    <form id="form1" name="form1" method="post" action="">
+        <div class="Role_Manager_style">
+            <div class="Manager_style search_style">
+                <ul class="search_content clearfix" shiro:hasPermission="/role/list">
+                    <li><label class="lf">角色标识</label>
+                        <label>
+                            <input name="sign" ng-model="requestParam.param.sign" type="text"
+                                   class="text_add"/>
+                        </label>
+                    </li>
+                    <li><label class="lf">角色名称</label>
+                        <label>
+                            <input name="name" ng-model="requestParam.param.name" type="text"
+                                   class="text_add"/>
+                        </label>
+                    </li>
+                    <button id="btn_search" ng-click="roleSearch = !roleSearch"  type="button" class="btn btn-primary">查询</button>
+                </ul>
+                <ul class="clearfix">
+                    <button type="button" class="btn btn-primary addBtn" ng-click="updateRole(1)"  shiro:hasPermission="/role/add" >添加</button>
+                    <button type="button" class="btn btn-success updateBtn" ng-click="updateRole(0)"  shiro:hasPermission="/role/edit" >编辑</button>
+                    <button type="button" class="btn btn-danger deleteBtn" ht-del="{url:'/role/delete',checkboxName:'subRoleChkbox'}"  shiro:hasPermission="/role/delete">删除</button>
+                    <button type="button" class="btn btn-info assignBtn" ng-click="assignPerission()" shiro:hasPermission="/roleRes/save">权限分配</button>
+                </ul>
+                <div id="Assigned_Roles_style" style="display: none">
+                    <div id="tree"></div>
+                </div>
+            </div>
+            <!---->
+            <div class="Manager_style">
+                <div class="Role_list">
+                    <table id="Role_list" cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>
+                                <input name="roleChkAll" type="checkbox"  ng-model="selectAll" class="ace" title=""/>
+                                <span class="lbl" style="cursor:pointer;"></span>
+                            </th>
+                            <th>标识</th>
+                            <th>名称</th>
+                            <th>创建日期</th>
+                            <th>更新日期</th>
+                            <th>备注 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="role in data">
+                            <td>
+                                <input name="subRoleChkbox" value="{{role.roleId}}" ng-model="selectedRoleIds" type="checkbox" ht-checked="selectAll"   class="ace subRoleChkbox"/>
+                                <span class="lbl" style="cursor:pointer;"></span>
+                            </td>
+                            <td ng-bind="role.sign"></td>
+                            <td ng-bind="role.name"></td>
+                            <td ng-bind="role.createTime | date:'yyyy-MM-dd HH:mm:ss'"></td>
+                            <td ng-bind="role.updateTime | date:'yyyy-MM-dd HH:mm:ss'"></td>
+                            <td ng-bind="role.remark"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="hupan_more eg-page"  url="/role/list"  request-page-params="requestParam" click-search="roleSearch"  return-page-rows="data"></div>
+            </div>
+        </div>
+    </form>
+    
+    <form name="form"  >
+    	   <div id="Add_Roles_style" style="display: none">
+                    <div class="role_Manager_style ">
+                        <div class="add_role_style">
+                            <ul class="clearfix">
+                                <li>
+                                    <label class="label_name">标识</label>
+                                    <label>
+                                        <input name="key" type="text" ng-model="role.sign" value=""
+                                               class="text_add" ht-validate="{required:true}" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label_name">名称</label>
+                                    <label>
+                                        <input name="name" ng-model="role.name" type="text" value=""
+                                               class="text_add" ht-validate="{required:true}" />
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="Remark" style="padding-top: 20px;">
+                                <label class="label_name">备注</label>
+                                <label>
+                                    <textarea name="remark" ng-model="role.remark" cols="" rows=""
+                                              style="width: 456px; height: 100px; padding: 5px;"></textarea>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-layer-btn"><a class="layui-layer-btn0" ht-save="/role/save" ng-model="role">保存</a><a class="layui-layer-btn1">取消</a></div>
+                </div>
+    </form>
+</div>
+</body>
+</html>

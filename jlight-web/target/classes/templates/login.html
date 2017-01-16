@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+    <link rel="stylesheet" th:href="@{/favicon.ico}"/>
+    <link rel="stylesheet" th:href="@{/css/login.css}"/>
+</head>
+<body class="login">
+<div class="login_logo" style="margin-top: 68px;">
+    <img src="" th:attr="src=@{/images/logo.png}"/>
+</div>
+<div class="login_m">
+    <form  th:attr="action=@{/login}" method="POST">
+    <div class="login_boder">
+        <div class="login_padding">
+            <!--/*@thymesVar id="msg" type="templates"*/-->
+            <span id="errorMsg" th:text="${msg}"></span>
+            <h2>用户名</h2>
+            <label>
+                <input type="text" id="username" name="account" value="admin" class="txt_input txt_input2"/>
+            </label>
+            <h2>密码</h2>
+            <label>
+                <input type="password" name="password" id="userpwd" value="123456" class="txt_input"/>
+            </label>
+            <div class="rem_sub">
+                <label>
+                    <input type="submit" name="loginBtn" id="button" class="sub_button"
+                            value="登录" style="opacity: 0.7;"/>
+                </label>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>
