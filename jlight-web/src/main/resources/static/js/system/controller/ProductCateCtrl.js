@@ -27,6 +27,9 @@ productCateApp.controller('productCateCtrl', ['$rootScope', '$scope','productCat
 		}else{
 			$scope.productCate.isShow = '0';
 			$scope.productCate.status = '0';
+			productCateService.getProductCate().then(function(response){
+				$scope.productCateMap = response.data;
+			});
 		}
 		layer.open({
 			type : 1,

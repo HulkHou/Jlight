@@ -30,7 +30,6 @@ public class ProductCateController {
         return "productCate";
     }
 
-
     @ResponseBody
     @PostMapping("list")
     @WebLogger("查询商品分类列表")
@@ -48,7 +47,6 @@ public class ProductCateController {
         productCateService.add(productCate);
         return new Response("添加成功");
     }
-
 
     @ResponseBody
     @PostMapping("edit")
@@ -90,6 +88,14 @@ public class ProductCateController {
     @WebLogger("查询商品分类详细")
     public Response detail(@RequestBody String cateId) {
         Map productCate = productCateService.getDetail(cateId);
+        return new Response(productCate);
+    }
+
+    @ResponseBody
+    @PostMapping("getProductCate")
+    @WebLogger("查询商品分类")
+    public Response getProductCate() {
+        List productCate = productCateService.getProductCate();
         return new Response(productCate);
     }
 }

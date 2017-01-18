@@ -19,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.math.BigInteger;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -53,6 +54,7 @@ public class ProductCateServiceImpl implements ProductCateService {
         checkArgument(!Strings.isNullOrEmpty(productCate.getCateName()), "分类名称不能为空");
         ProductCate model = productCateDao.findUnique("getByCateId", productCate.getCateId());
         checkNotNull(model, "商品分类信息不存在");
+        productCate.setUpdateTime(new Date());
         productCateDao.update("updateProductCate", productCate);
     }
 
@@ -64,6 +66,11 @@ public class ProductCateServiceImpl implements ProductCateService {
         checkNotNull(productCateMap, "分类对象不存在");
         resultMap.put("productCate", productCateMap);
         return resultMap;
+    }
+
+    @Override
+    public List getProductCate() {
+        return productCateDao.findMap("getProductCate");
     }
 
     @Override

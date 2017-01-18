@@ -23,6 +23,8 @@ public interface ProductCateService {
     void delete(List<String> cateIds);
 //
     Map getDetail(String cateId);
+
+    List getProductCate();
 //
 //    User getByUserId(String userId);
 //

@@ -57,9 +57,8 @@
                                 <label>
                                     <select name="parentId" size="1" ng-model="productCate.parentId"
                                             ng-init="productCate.parentId=-1">
-                                        <option ng-repeat="map in parentIdMap"
-                                                ng-selected="map.parentId == productCate.parentId"
-                                                value="{{map.parentId}}" ng-bind="map.parentIdName"></option>
+                                        <option ng-repeat="map in productCateMap"
+                                                value="{{map.cateId}}" ng-bind="map.cateName"></option>
                                     </select>
                                 </label>
                             </li>

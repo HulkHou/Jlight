@@ -43,6 +43,10 @@
         select cateId,cateName,cateImg,cateIconImg,parentId,isShow,createTime,updateTime,sortNum,status
         from t_product_cate where cateId = #{cateId}
     </select>
+    <select id="getProductCate" parameterType="java.lang.String" resultType="Map">
+        select cateId,cateName
+        from t_product_cate where status = '0'
+    </select>
     <update id="updateProductCate" parameterType="java.util.Map">
         update t_product_cate set
         cateName=#{cateName}, cateImg=#{cateImg}, cateIconImg=#{cateIconImg}, parentId=#{parentId}, isShow=#{isShow}, updateTime=#{updateTime}, sortNum=#{sortNum}, status=#{status}
