@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cedcf1-4624-4d6e-bb5e-149816753e0f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/controller/ProductCateController.class" afterPath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/controller/ProductCateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/entity/ProductCate.class" afterPath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/entity/ProductCate.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/jlight-init.sql" afterPath="$PROJECT_DIR$/doc/jlight-init.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/entity/ProductCate.java" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/entity/ProductCate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/mapper/ProductCateMap.xml" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/mapper/ProductCateMap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/controller/ProductCateCtrl.js" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/controller/ProductCateCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/templates/productCate.html" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/templates/productCate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/mapper/ProductCateMap.xml" afterPath="$PROJECT_DIR$/jlight-web/target/classes/mapper/ProductCateMap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/controller/ProductCateCtrl.js" afterPath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/controller/ProductCateCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/templates/productCate.html" afterPath="$PROJECT_DIR$/jlight-web/target/classes/templates/productCate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/server.log" afterPath="$PROJECT_DIR$/logs/server.log" />
     </list>
     <ignored path="jlight-parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -644,7 +633,7 @@
       <workItem from="1483438280070" duration="94965000" />
       <workItem from="1484528770221" duration="1207000" />
       <workItem from="1484539283787" duration="31593000" />
-      <workItem from="1484727764007" duration="11777000" />
+      <workItem from="1484727764007" duration="11843000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1484546191808</created>
@@ -653,11 +642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484546191808</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改商品分类-上级分类显示问题">
+      <created>1484903820267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1484903820267</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139542000" />
+    <option name="totallyTimeSpent" value="139608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -706,7 +702,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="修改商品分类-上级分类显示问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改商品分类-上级分类显示问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
