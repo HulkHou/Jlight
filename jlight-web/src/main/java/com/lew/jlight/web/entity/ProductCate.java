@@ -16,11 +16,21 @@ public class ProductCate extends BaseEntity {
 
 	private String parentId;
 
+	private String parentName;
+
 	private String isShow;
 
 	private String sortNum;
 
 	private String status;
+
+	public String getParentName() {
+		return parentName;
+	}
+
+	public void setParentName(String parentName) {
+		this.parentName = parentName;
+	}
 
 	public String getCateImg() {
 		return cateImg;

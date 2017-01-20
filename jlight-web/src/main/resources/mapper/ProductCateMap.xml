@@ -20,11 +20,25 @@
         values(#{cateName},#{cateImg},#{cateIconImg},#{parentId},#{isShow},#{createTime},#{updateTime},#{sortNum},#{status})
     </insert>
     <select id="getList" resultType="Map" parameterType="java.util.Map">
-        select cateId, cateName, parentId, isShow, createTime, updateTime, sortNum, status
-        from t_product_cate
+        SELECT
+        cateId,
+        cateName,
+        (SELECT
+        cateName
+        FROM t_product_cate t
+        WHERE t.cateId = (SELECT
+        parentId
+        FROM t_product_cate t1
+        WHERE t1.cateName = t2.cateName)) AS parentName,
+        isShow,
+        createTime,
+        updateTime,
+        sortNum,
+        STATUS
+        FROM t_product_cate t2
         <where>
             <if test="@Ognl@isNotEmpty(cateName)">
-                cateName = #{cateName}
+                t2.cateName = #{cateName}
             </if>
         </where>
         <if test="@Ognl@isNotEmpty(page)">

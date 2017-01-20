@@ -294,18 +294,18 @@ CREATE TABLE `sys_web_log` (
 DROP TABLE IF EXISTS `t_product_cate`;
 
 CREATE TABLE `t_product_cate` (
-  `cateId` int(11) NOT NULL AUTO_INCREMENT,
-  `cateName` varchar(50) DEFAULT NULL COMMENT '分类名称',
-  `cateImg` varchar(300) DEFAULT NULL COMMENT '分类宣传广告，可以为空',
-  `cateIconImg` varchar(300) DEFAULT NULL COMMENT '分类小图标，可以为空',
-  `parentId` tinyint(4) DEFAULT NULL COMMENT '分类上级，-1表示一级分类',
-  `isShow` tinyint(4) DEFAULT NULL COMMENT '是否显示分类，主要控制前端是否需要显示分类,默认0表示显示，-1表示不显示',
-  `createTime` datetime DEFAULT NULL COMMENT '创建时间',
-  `updateTime` datetime DEFAULT NULL COMMENT '更新时间',
-  `sortNum` int(11) DEFAULT NULL COMMENT '排序ID',
-  `status` tinyint(4) DEFAULT '0' COMMENT '状态，默认0，表示启用，-1表示禁用',
+  `cateId` INT(11) NOT NULL AUTO_INCREMENT,
+  `cateName` VARCHAR(50) DEFAULT NULL COMMENT '分类名称',
+  `cateImg` VARCHAR(300) DEFAULT NULL COMMENT '分类宣传广告，可以为空',
+  `cateIconImg` VARCHAR(300) DEFAULT NULL COMMENT '分类小图标，可以为空',
+  `parentId` TINYINT(4) DEFAULT NULL COMMENT '分类上级，-1表示一级分类',
+  `isShow` TINYINT(4) DEFAULT NULL COMMENT '是否显示分类，主要控制前端是否需要显示分类,默认0表示显示，-1表示不显示',
+  `createTime` DATETIME DEFAULT NULL COMMENT '创建时间',
+  `updateTime` DATETIME DEFAULT NULL COMMENT '更新时间',
+  `sortNum` INT(11) DEFAULT NULL COMMENT '排序ID',
+  `status` TINYINT(4) DEFAULT '0' COMMENT '状态，默认0，表示启用，-1表示禁用',
   PRIMARY KEY (`cateId`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=INNODB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8
 
 -- ----------------------------
 -- Records of t_product_cate

@@ -24,7 +24,12 @@ productCateApp.controller('productCateCtrl', ['$rootScope', '$scope','productCat
 				$scope.productCate.isShow = isShow.toString();
 				$scope.productCate.status = status.toString();
 			});
+			productCateService.getProductCate().then(function(response){
+				$scope.productCateMap = response.data;
+			});
 		}else{
+			$scope.productCate = {};
+			$scope.productCate.parentId = '-1';
 			$scope.productCate.isShow = '0';
 			$scope.productCate.status = '0';
 			productCateService.getProductCate().then(function(response){
