@@ -1,0 +1,157 @@
+11:56:10.805 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 4236 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+11:56:10.816 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+11:56:15.079 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.698 seconds (JVM running for 5.744)
+11:56:17.872 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+11:56:17.872 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+11:56:17.872 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+11:56:17.872 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+11:56:17.872 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+11:56:20.457 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+11:56:20.457 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+11:56:20.458 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+11:56:20.458 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+11:56:20.596 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+11:56:20.651 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+11:56:22.149 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+11:56:22.149 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+11:56:22.150 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+11:56:22.150 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+11:56:22.150 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+11:56:22.168 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+11:56:54.547 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 20228 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+11:56:54.552 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+11:56:58.363 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.396 seconds (JVM running for 5.048)
+11:57:02.737 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+11:57:02.738 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+11:57:02.738 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+11:57:02.738 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+11:57:02.738 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+11:57:05.111 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+11:57:05.111 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+11:57:05.111 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+11:57:05.111 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+11:57:05.244 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+11:57:05.295 [http-nio-1010-exec-8] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+11:57:16.452 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+11:57:16.452 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+11:57:16.452 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+11:57:16.452 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+11:57:16.452 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+11:57:16.471 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:29:55.479 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 12832 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:29:55.481 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:29:59.815 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.963 seconds (JVM running for 6.053)
+17:30:05.189 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+17:30:05.189 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+17:30:05.189 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+17:30:05.189 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+17:30:05.190 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+17:30:16.146 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+17:30:16.146 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:16.146 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:16.146 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+17:30:16.293 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:30:16.349 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:30:18.795 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:18.795 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:18.796 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:18.796 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:18.796 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:18.817 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:30:25.361 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:25.361 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:25.361 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:25.361 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:25.361 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:25.374 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:30:25.852 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:25.852 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:25.852 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:25.852 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:25.852 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:25.871 [http-nio-1010-exec-4] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:30:26.038 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:26.038 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:26.039 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:26.039 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:26.039 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:26.056 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:30:26.236 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:26.237 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:26.237 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:26.237 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:26.237 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:26.250 [http-nio-1010-exec-6] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:30:26.405 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:30:26.406 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:30:26.406 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:30:26.406 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:30:26.406 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:30:26.421 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:31:23.140 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 17376 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:31:23.145 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:31:27.114 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.495 seconds (JVM running for 5.101)
+17:31:30.908 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 22584 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:31:30.911 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:31:34.944 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.657 seconds (JVM running for 5.347)
+17:31:39.950 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+17:31:39.950 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+17:31:39.950 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+17:31:39.950 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+17:31:39.951 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+17:31:51.536 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+17:31:51.536 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:31:51.536 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:31:51.536 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+17:31:51.685 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:31:51.734 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:31:52.870 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:31:52.870 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:31:52.870 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:31:52.870 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:31:52.870 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:31:52.883 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:35:22.063 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 7452 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+17:35:22.065 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+17:35:25.829 [main] INFO  com.lew.jlight.web.Application - Started Application in 4.218 seconds (JVM running for 4.832)
+17:35:40.812 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+17:35:40.812 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+17:35:40.812 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+17:35:40.812 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+17:35:40.812 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+17:35:47.637 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+17:35:47.637 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:35:47.637 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:35:47.637 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+17:35:47.787 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:35:47.838 [http-nio-1010-exec-10] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:35:49.326 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:35:49.326 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:35:49.326 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:35:49.326 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:35:49.326 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:35:49.344 [http-nio-1010-exec-1] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:36:00.127 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/detail
+17:36:00.127 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:36:00.127 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:36:00.127 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.detail
+17:36:00.127 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : ["7"]
+17:36:00.147 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":{"productCate":{"cateImg":null,"createTime":null,"cateId":7,"cateIconImg":null,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1}},"page":null,"code":0,"msg":null}
+17:36:35.667 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:36:35.668 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:36:35.670 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:36:35.670 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:36:35.670 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:36:35.689 [http-nio-1010-exec-3] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}
+17:43:45.540 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+17:43:45.540 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:43:45.540 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:43:45.540 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+17:43:45.540 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+17:43:45.554 [http-nio-1010-exec-5] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"createTime":1484297687000,"cateId":8,"updateTime":1484297687000,"sortNum":24,"cateName":"0002","parentId":-1,"isShow":0,"status":0},{"createTime":null,"cateId":7,"updateTime":1484555715000,"sortNum":0,"cateName":"0001","parentId":null,"isShow":1,"status":1},{"createTime":1484562892000,"cateId":11,"updateTime":1484562892000,"sortNum":5,"cateName":"5","parentId":-1,"isShow":0,"status":0},{"createTime":1484552664000,"cateId":10,"updateTime":1484555090000,"sortNum":7,"cateName":"0004","parentId":-1,"isShow":0,"status":0}],"page":{"resultCount":4,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
+17:43:50.557 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/getProductCate
+17:43:50.557 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+17:43:50.557 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+17:43:50.557 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.getProductCate
+17:43:50.557 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - ARGS : null
+17:43:50.572 [http-nio-1010-exec-7] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"cateId":8,"cateName":"0002"},{"cateId":11,"cateName":"5"},{"cateId":10,"cateName":"0004"}],"page":null,"code":0,"msg":null}

@@ -1,29 +1,34 @@
-var userApp = angular.module('userApp', ['base']);
-userApp.controller('userCtrl', ['$rootScope', '$scope','userService',function ($rootScope,$scope,userService) {
+var productApp = angular.module('productApp', ['base']);
+productApp.controller('productCtrl', ['$rootScope', '$scope','productService',function ($rootScope,$scope,productService) {
 	$('#multiselect').multiselect({});
 	//搜索参数
 	$scope.queryFilter = {};
 	$scope.role = {	};
-	$scope.isLockMap = [{isLock:0, name: "启用"}, {isLock: 1, name: "停用"}];
-	//添加用户,1为添加，0为修改
-	$scope.updateUser = function(sign){
-		var selectArray = $("#User_list tbody input:checked");
+	$scope.isOnsaleMap = [{isOnsale:1, isOnsaleName: "在售"}, {isOnsale: 0, isOnsaleName: "停售"}];
+	$scope.statusMap = [{status:0, statusName: "未删除"}, {status: -1, statusName: "已删除"}];
+	//添加商品,1为添加，0为修改
+	$scope.updateProduct = function(sign){
+		var selectArray = $("#Product_list tbody input:checked");
 		if(!selectArray || (selectArray.length!=1 && sign==0)){
 			alertDialog("请选择一个");
 			return;
 		}
-		var titleName = selectArray && selectArray.length>0 ? '修改用户':'添加用户';
-		var userId = $(selectArray[0]).val();
-		if(userId && sign==0){
-			userService.detail(userId).then(function(response){
-				var isLock = response.data.user.isLock;
-				$scope.user = response.data.user;
-				$scope.user.isLock = isLock.toString();
+		var titleName = "添加商品信息";
+		var ProductId = $(selectArray[0]).val();
+		if(ProductId && sign==0){
+			titleName = "修改商品信息";
+			productService.detail(ProductId).then(function(response){
+				var isOnsale = response.data.product.isOnsale;
+				var status = response.data.product.status;
+				$scope.product = response.data.product;
+				$scope.product.isOnsale = isOnsale.toString();
+				$scope.product.status = status.toString();
 			});
 		}else{
-			$scope.user = {
-				isLock :'0'
-			};
+			$scope.product = {};
+			$scope.product.parentId = '-1';
+			$scope.product.isOnsale = '1';
+			$scope.product.status = '0';
 		}
 		layer.open({
 			type : 1,
@@ -31,42 +36,44 @@ userApp.controller('userCtrl', ['$rootScope', '$scope','userService',function ($
 			maxmin : true,
 			shadeClose : true, //点击遮罩关闭层
 			area : [ '576px', '468px' ],
-			content : $('#Add_user_style'),
+			content : $('#Add_product_style'),
 			btn : [ '保存', '取消' ],
 			yes : function(index, layero) {
-				if ($("#name").val() == "") {
-					alertDialog("登录用户名不能为空");
+				if ($("#productName").val() == "") {
+					alertDialog("商品名称不能为空");
 					return;
 				}
-				if ($("#password").val() == "") {
-					alertDialog("密码不能为空");
+				if ($("#isOnsale").val() == "") {
+					alertDialog("是否显示不能为空");
 					return;
 				}
-				if ($("#phone").val() == "") {
-					alertDialog("手机号码不能为空");
+				if ($("#sortNum").val() == "") {
+					alertDialog("排序ID不能为空");
 					return;
 				}
-				if ($("#select_status").val() == "") {
-					alertDialog("用户状态能为空");
+				if ($("#status").val() == "") {
+					alertDialog("状态不能为空");
 					return;
 				} else {
-					var user = angular.copy($scope.user);
+					var product = angular.copy($scope.product);
 					var roleIds = [];
 					$("#multiselect_to option").each(function(i,e){
 						var selectVal = $(this).val();
 						roleIds.push(selectVal);
 					});
-					if(!user){
-						layer.msg('用户不能为空！', {
+					if(!product){
+						layer.msg('商品名称不能为空！', {
 							time : 1000,
 							icon : 1
 						});
 						return;
 					}
-					var isLockStr = user.isLock;
-					user.isLock = parseInt(isLockStr);
-					if(!userId){
-						userService.addUser(user).then(function(response){
+					var isOnsaleStr = product.isOnsale;
+					product.isOnsale = parseInt(isOnsaleStr);
+					var statusStr = product.status;
+					product.status = parseInt(statusStr);
+					if(!ProductId){
+						productService.addProduct(product).then(function(response){
 							layer.alert(response.msg, {
 								title : '提示框',
 								icon : 1,
@@ -76,7 +83,7 @@ userApp.controller('userCtrl', ['$rootScope', '$scope','userService',function ($
 							});
 						});
 					}else{
-						userService.editUser(user).then(function(response){
+						productService.editProduct(product).then(function(response){
 							layer.alert('修改成功！', {
 								title : '提示框',
 								icon : 1,
@@ -92,52 +99,26 @@ userApp.controller('userCtrl', ['$rootScope', '$scope','userService',function ($
 			}
 		});
 	}
-	//重置密码
-	$scope.resetPwd =function(){
-		var selectArray = $("#User_list tbody input:checked");
+
+	//删除商品分类
+	$scope.deleteProduct = function(){
+		var selectArray = $("#Product_list tbody input:checked");
 		if(!selectArray || selectArray.length==0){
-			alertDialog("请选择用户");
+			alertDialog("请选择商品信息");
 			return;
 		}
-		var userIds = new Array();
+		var productIds = new Array();
 		$.each(selectArray,function(i,e){
 			var val = $(this).val();
-			userIds.push(val);
+			productIds.push(val);
 		});
-		if(userIds.lenght==0){
+		if(productIds.lenght==0){
 			return;
 		}
-		layer.confirm('是否重置密码，重置后原密码将失效？', {
-			btn : [ '重置', '取消' ]
-		}, function() {
-			userService.resetPwd(userIds).then(function(response){
-				layer.msg(response.msg, {
-					time : 1000,
-					icon : 1
-				});
-			});
-		});
-	}
-	
-	//删除用户
-	$scope.deleteUser = function(){
-		var selectArray = $("#User_list tbody input:checked");
-		if(!selectArray || selectArray.length==0){
-			alertDialog("请选择用户");
-			return;
-		}
-		var userIds = new Array();
-		$.each(selectArray,function(i,e){
-			var val = $(this).val();
-			userIds.push(val);
-		});
-		if(userIds.lenght==0){
-			return;
-		}
-		layer.confirm('是否删除用户？', {
+		layer.confirm('是否删除此商品？', {
 			btn : [ '确定', '取消' ]
 		}, function() {
-			userService.deleteUser(userIds).then(function(resp){
+			productService.deleteProduct(productIds).then(function(resp){
 				layer.msg(resp.msg, {
 					time : 1000,
 					icon : 1
@@ -148,70 +129,16 @@ userApp.controller('userCtrl', ['$rootScope', '$scope','userService',function ($
 		});
 	}
 
-	$scope.asignRole = function(userId){
-		var selectArray = $("#User_list tbody input:checked");
-		if(!selectArray || selectArray.length!=1){
-			alertDialog("请选择一个用户");
-			return;
-		}
-		var userId;
-		$.each(selectArray,function(i,e){
-			var val = $(this).val();
-			userId =val;
-		});
-		var includeRolesMap = [];
-		var excludeRolesMap = [];
-		userService.getRoleMap(userId).then(function(response){
-			$scope.roleIds = response.data.roleIds;
-			$.each(response.data.roleList,function(i,roleMap){
-				var roleId = roleMap.roleId;
-				if($scope.roleIds.indexOf(roleId)>=0){
-					var roleObj = {'roleId':roleId,'name':roleMap.name};
-					includeRolesMap.push(roleObj);
-				}else{
-					var roleObj = {'roleId':roleId,'name':roleMap.name};
-					excludeRolesMap.push(roleObj);
-				}
-			});
-			$scope.roleMap = excludeRolesMap;
-			$scope.includeRoleMap =includeRolesMap;
-		});
-		layer.open({
-		   type : 1,
-		   title : "角色分配",
-		   maxmin : true,
-		   shadeClose : true, //点击遮罩关闭层
-		   area : [ '576px', '468px' ],
-		   content : $('#asignRole'),
-		   btn : [ '保存', '取消' ],
-		   yes : function(index, layero) {
-			   var roleIds = [];
-			   $("#multiselect_to option").each(function(i,e){
-				   var selectVal = $(this).val();
-				   roleIds.push(selectVal);
-			   });
-			   var param = {"userId":userId,"roleIds":roleIds};
-				userService.saveUserRole(param).then(function(response){
-					layer.alert(response.msg, {
-						title : '提示框',
-						icon : 6,
-					},function(){
-						layer.closeAll();
-					});
-				});
-		   }});
-	}
-	
 	$scope.selectAll = function($event){
 		var target = $event.target
 		if($(target).prop("checked")){
-			$(".subUserChkbox").each(function(i,e){
+			$(".subProductChkBox").each(function(i,e){
 				$(this).attr("checked",true);
 			});
 		}else{
-			$(".subUserChkbox").each(function(i,e){
+			$(".subProductChkBox").each(function(i,e){
 				$(this).attr("checked",false);
 			});
 		}
 	}
- }]);
+}]);

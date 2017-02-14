@@ -4,8 +4,8 @@ import com.lew.jlight.core.Response;
 import com.lew.jlight.core.page.Page;
 import com.lew.jlight.mybatis.ParamFilter;
 import com.lew.jlight.web.aop.annotaion.WebLogger;
-import com.lew.jlight.web.entity.User;
-import com.lew.jlight.web.service.UserService;
+import com.lew.jlight.web.entity.Product;
+import com.lew.jlight.web.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,73 +21,62 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public class ProductController {
 
     @Resource
-    private UserService userService;
+    private ProductService productService;
 
     @GetMapping("listPage")
     public String list() {
-        return "productList";
+        return "product";
     }
-
 
     @ResponseBody
     @PostMapping("list")
-    @WebLogger("查询用户列表")
-    public Response list(@RequestBody  ParamFilter queryFilter) {
-        List userList = userService.getList(queryFilter);
+    @WebLogger("查询商品列表")
+    public Response list(@RequestBody ParamFilter queryFilter) {
+        List productList = productService.getList(queryFilter);
         Page page = queryFilter.getPage();
-        return new Response(userList,page);
+        return new Response(productList, page);
     }
 
     @ResponseBody
     @PostMapping("add")
-    @WebLogger("添加用户")
-    public Response add(@RequestBody User user) {
-        checkNotNull(user, "用户不能为空");
-        userService.add(user);
+    @WebLogger("添加商品信息")
+    public Response add(@RequestBody Product product) {
+        checkNotNull(product, "商品信息不能为空");
+        productService.add(product);
         return new Response("添加成功");
     }
 
-
     @ResponseBody
     @PostMapping("edit")
-    @WebLogger("编辑用户")
-    public Response edit(@RequestBody User user) {
-        userService.update(user);
+    @WebLogger("编辑商品信息")
+    public Response edit(@RequestBody Product product) {
+        productService.update(product);
         return new Response("修改成功");
     }
 
     @ResponseBody
     @PostMapping("delete")
-    @WebLogger("删除用户")
-    public Response delete(@RequestBody List<String> userIds) {
-        checkArgument((userIds != null && userIds.size() > 0), "用户编号不能为空");
-        userService.delete(userIds);
+    @WebLogger("删除商品信息")
+    public Response delete(@RequestBody List<String> productIds) {
+        checkArgument((productIds != null && productIds.size() > 0), "商品ID不能为空");
+        productService.delete(productIds);
         return new Response("删除成功");
     }
 
     @ResponseBody
-    @PostMapping("resetPwd")
-    @WebLogger("重置密码")
-    public Response resetPwd(@RequestBody List<String> userIds) {
-        checkArgument((userIds != null && userIds.size() > 0), "用户编号不能为空");
-        userService.updateDefaultPwd(userIds);
-        return new Response("重置成功");
-    }
-
-
-    @ResponseBody
-    @PostMapping("changePwd")
-    @WebLogger("更改密码")
-    public Response changePwd(String originPwd, String confirmPwd, String newPwd) {
-        userService.updatePwd(originPwd, newPwd, confirmPwd);
-        return new Response("更改密码成功");
-    }
-
-    @ResponseBody
     @PostMapping("detail")
-    @WebLogger("查询用户详细")
-    public Response detail(@RequestBody String userId) {
-        Map user = userService.getDetail(userId);
-        return new Response(user);
+    @WebLogger("查询商品详细信息")
+    public Response detail(@RequestBody String productId) {
+        Map product = productService.getDetail(productId);
+        return new Response(product);
     }
+
+//    @ResponseBody
+//    @PostMapping("getProduct")
+//    @WebLogger("查询商品分类")
+//    public Response getProduct() {
+//        List product = productService.getProduct();
+//        return new Response(product);
+//    }
+
 }

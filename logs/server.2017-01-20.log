@@ -1,0 +1,14 @@
+11:57:14.729 [main] INFO  com.lew.jlight.web.Application - Starting Application on IN-48A with PID 16656 (D:\IdeaProjects\Jlight\jlight-web\target\classes started by hulk in D:\IdeaProjects\Jlight)
+11:57:14.740 [main] INFO  com.lew.jlight.web.Application - The following profiles are active: dev
+11:57:20.911 [main] INFO  com.lew.jlight.web.Application - Started Application in 6.707 seconds (JVM running for 7.463)
+11:57:37.062 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - URL : http://localhost:1010/login
+11:57:37.062 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - HTTP_METHOD : POST
+11:57:37.062 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - IP : 0:0:0:0:0:0:0:1
+11:57:37.062 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - CLASS_METHOD : com.lew.jlight.web.controller.LoginController.doLogin
+11:57:37.062 [http-nio-1010-exec-9] INFO  com.lew.jlight.web.aop.LoginAop - ARGS : [admin, 123456, {}]
+11:57:39.818 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - URL : http://localhost:1010/productCate/list
+11:57:39.819 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - HTTP_METHOD : POST
+11:57:39.819 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - IP : 0:0:0:0:0:0:0:1
+11:57:39.819 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - CLASS_METHOD : com.lew.jlight.web.controller.ProductCateController.list
+11:57:39.971 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - ARGS : [{"page":{"resultCount":0,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"param":null}]
+11:57:40.052 [http-nio-1010-exec-2] INFO  com.lew.jlight.web.entity.WebLog - RESPONSE DATA : {"data":[{"parentName":null,"STATUS":0,"createTime":1484735275000,"cateId":67,"updateTime":1484735275000,"sortNum":1,"cateName":"中文分类名称1","isShow":0},{"parentName":"中文分类名称1","STATUS":0,"createTime":1484792765000,"cateId":68,"updateTime":1484792765000,"sortNum":2,"cateName":"中文分类名称2","isShow":0},{"parentName":null,"STATUS":0,"createTime":1484792862000,"cateId":69,"updateTime":1484792862000,"sortNum":3,"cateName":"分类名称3","isShow":0},{"parentName":null,"STATUS":0,"createTime":1484793844000,"cateId":70,"updateTime":1484793844000,"sortNum":4,"cateName":"分类名称4","isShow":0},{"parentName":"分类名称4","STATUS":0,"createTime":1484793982000,"cateId":71,"updateTime":1484793982000,"sortNum":5,"cateName":"分类名称5","isShow":0},{"parentName":"分类名称3","STATUS":1,"createTime":1484794008000,"cateId":72,"updateTime":1484794194000,"sortNum":6,"cateName":"分类名称6","isShow":1}],"page":{"resultCount":6,"pageSize":10,"pageCount":1,"pageNo":1,"firstIndex":0,"lastIndex":10,"firstPage":true,"lastPage":true},"code":0,"msg":null}
