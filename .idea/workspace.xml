@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05cedcf1-4624-4d6e-bb5e-149816753e0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/dao/ProductDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/entity/Product.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/service/ProductService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/service/impl/ProductServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/mapper/ProductMap.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/templates/product.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/templates/productList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jlight-web/target/classes/templates/productList.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-03.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-04.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-05.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-06.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-10.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-11.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/server.2017-01-13.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/controller/ProductController.class" afterPath="$PROJECT_DIR$/jlight-web/target/classes/com/lew/jlight/web/controller/ProductController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/controller/ProductController.java" afterPath="$PROJECT_DIR$/jlight-web/src/main/java/com/lew/jlight/web/controller/ProductController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/controller/ProductCtrl.js" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/controller/ProductCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/service/ProductService.js" afterPath="$PROJECT_DIR$/jlight-web/src/main/resources/static/js/system/service/ProductService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/controller/ProductCtrl.js" afterPath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/controller/ProductCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/service/ProductService.js" afterPath="$PROJECT_DIR$/jlight-web/target/classes/static/js/system/service/ProductService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/server.log" afterPath="$PROJECT_DIR$/logs/server.log" />
     </list>
     <ignored path="jlight-parent.iws" />
@@ -166,6 +143,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="jlight-parent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jlight-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Jlight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -656,7 +643,7 @@
       <workItem from="1484528770221" duration="1207000" />
       <workItem from="1484539283787" duration="31593000" />
       <workItem from="1484727764007" duration="11843000" />
-      <workItem from="1486689286720" duration="28848000" />
+      <workItem from="1486689286720" duration="30096000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1484546191808</created>
@@ -676,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168456000" />
+    <option name="totallyTimeSpent" value="169704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -689,8 +676,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30819672" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30819672" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24371585" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35519126" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21967213" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -743,14 +730,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.4.RELEASE/spring-webmvc-4.3.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1134,9 +1113,8 @@
         <state relative-caret-position="4275">
           <caret line="171" column="77" selection-start-line="171" selection-start-column="77" selection-end-line="171" selection-end-column="77" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1162,7 +1140,7 @@
         <state relative-caret-position="398">
           <caret line="61" column="40" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1181,6 +1159,14 @@
             <marker date="1487065816995" expanded="true" signature="3172:3224" ph="delete from " />
             <marker date="1487065816995" expanded="true" signature="3221:3224" ph="delete from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/esdfasdfasdfasdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

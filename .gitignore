@@ -1,0 +1,5 @@
+logs/
+jlight-assembly/target/classes
+jlight-core/target/classes
+jlight-mybatis/target/classes
+jlight-web/target/classes
