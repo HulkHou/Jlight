@@ -10,13 +10,17 @@
 
     <insert id="insert" parameterType="com.lew.jlight.web.entity.Product">
         insert into t_product
-        (productNum,productName,brandName,originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,status,createTime,updateTime)
-        values(#{productNum},#{productName},#{brandName},#{originalImg},#{thumbImg},#{marketPrice},#{salePrice},#{stock},#{saleCount},#{expressConfig},#{expressMoney},#{isOnsale},#{purchase},#{skuCustom},#{productDesc},#{sortNum},#{status},#{createTime},#{updateTime})
+        (productNum,productName,brandName,cateId1,cateId2,cateId3,originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,status,createTime,updateTime)
+        values(#{productNum},#{productName},#{brandName},#{cateId1},#{cateId2},#{cateId3},#{originalImg},#{thumbImg},#{marketPrice},#{salePrice},#{stock},#{saleCount},#{expressConfig},#{expressMoney},#{isOnsale},#{purchase},#{skuCustom},#{productDesc},#{sortNum},#{status},#{createTime},#{updateTime})
     </insert>
     <select id="getList" resultType="Map" parameterType="java.util.Map">
         SELECT
-        productId,productNum,productName,brandName,originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,status,createTime,updateTime
-        FROM t_product
+        productId,productNum,productName,brandName,
+        cateId1,(SELECT cateName FROM t_product_cate t2 WHERE t2.cateId = t1.cateId1) AS cateIdName1,
+        cateId2,(SELECT cateName FROM t_product_cate t2 WHERE t2.cateId = t1.cateId2) AS cateIdName2,
+        cateId3,(SELECT cateName FROM t_product_cate t2 WHERE t2.cateId = t1.cateId3) AS cateIdName3,
+        originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,STATUS,createTime,updateTime
+        FROM t_product t1
         <where>
             <if test="@Ognl@isNotEmpty(productName)">
                 productName = #{productName}
@@ -35,11 +39,11 @@
         </where>
     </select>
     <select id="getProductDetail" parameterType="java.lang.String" resultType="Map">
-        SELECT productId,productNum,productName,brandName,originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,status,createTime,updateTime FROM t_product where productId = #{productId}
+        SELECT productId,productNum,productName,brandName,cateId1,cateId2,cateId3,originalImg,thumbImg,marketPrice,salePrice,stock,saleCount,expressConfig,expressMoney,isOnsale,purchase,skuCustom,productDesc,sortNum,status,createTime,updateTime FROM t_product where productId = #{productId}
     </select>
     <update id="updateProduct" parameterType="java.util.Map">
         update t_product set
-        productNum=#{productNum}, productName=#{productName}, brandName=#{brandName}, originalImg=#{originalImg}, thumbImg=#{thumbImg}, marketPrice=#{marketPrice}, salePrice=#{salePrice}, stock=#{stock}, saleCount=#{saleCount}, expressConfig=#{expressConfig}, expressMoney=#{expressMoney}, isOnsale=#{isOnsale}, purchase=#{purchase}, skuCustom=#{skuCustom}, productDesc=#{productDesc}, sortNum=#{sortNum}, status=#{status}, updateTime=#{updateTime}
+        productNum=#{productNum}, productName=#{productName}, brandName=#{brandName}, cateId1=#{cateId1}, cateId2=#{cateId2}, cateId3=#{cateId3}, originalImg=#{originalImg}, thumbImg=#{thumbImg}, marketPrice=#{marketPrice}, salePrice=#{salePrice}, stock=#{stock}, saleCount=#{saleCount}, expressConfig=#{expressConfig}, expressMoney=#{expressMoney}, isOnsale=#{isOnsale}, purchase=#{purchase}, skuCustom=#{skuCustom}, productDesc=#{productDesc}, sortNum=#{sortNum}, status=#{status}, updateTime=#{updateTime}
         where productId=#{productId}
     </update>
     <select id="getByProductId" parameterType="java.lang.String" resultMap="Product">

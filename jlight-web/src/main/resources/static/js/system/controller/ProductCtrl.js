@@ -24,11 +24,19 @@ productApp.controller('productCtrl', ['$rootScope', '$scope','productService',fu
 				$scope.product.isOnsale = isOnsale.toString();
 				$scope.product.status = status.toString();
 			});
+			productService.getProductCate().then(function(response){
+				$scope.productMap = response.data;
+			});
 		}else{
 			$scope.product = {};
-			$scope.product.parentId = '-1';
+			$scope.product.cateId1 = '-1';
+			$scope.product.cateId2 = '-1';
+			$scope.product.cateId3 = '-1';
 			$scope.product.isOnsale = '1';
 			$scope.product.status = '0';
+			productService.getProductCate().then(function(response){
+				$scope.productMap = response.data;
+			});
 		}
 		layer.open({
 			type : 1,

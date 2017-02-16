@@ -310,3 +310,41 @@ CREATE TABLE `t_product_cate` (
 -- ----------------------------
 -- Records of t_product_cate
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for t_product
+-- ----------------------------
+
+DROP TABLE IF EXISTS `t_product`;
+
+CREATE TABLE `t_product` (
+  `productId` INT(11) NOT NULL AUTO_INCREMENT,
+  `productNum` VARCHAR(50) DEFAULT NULL COMMENT '商品编号',
+  `cateId1` INT(11) DEFAULT NULL COMMENT '一级分类ID',
+  `cateId2` INT(11) DEFAULT NULL COMMENT '二级分类ID',
+  `cateId3` INT(11) DEFAULT NULL COMMENT '三级分类ID',
+  `brandName` VARCHAR(300) DEFAULT NULL COMMENT '商品品牌',
+  `productName` VARCHAR(300) DEFAULT NULL COMMENT '商品名称',
+  `originalImg` VARCHAR(300) DEFAULT NULL COMMENT '商品主图',
+  `thumbImg` VARCHAR(300) DEFAULT NULL COMMENT '商品主图缩略图',
+  `marketPrice` DECIMAL(12,2) DEFAULT NULL COMMENT '商品原价',
+  `salePrice` DECIMAL(12,2) DEFAULT NULL COMMENT '销售价',
+  `stock` INT(11) DEFAULT NULL COMMENT '商品总库存',
+  `saleCount` INT(11) DEFAULT NULL COMMENT '基础销量',
+  `expressConfig` INT(11) DEFAULT NULL COMMENT '-1表示免邮，0表示统一运费，1表示使用运费模板',
+  `expressMoney` DECIMAL(12,2) DEFAULT NULL COMMENT '当expressConfig为-1时，它为0.00；为0时，它为统一价格',
+  `expressTemplate` INT(11) DEFAULT '1' COMMENT '运费模板ID，当expressConfig为-1,0是，此字段为空，当为1时，表示运费模板id',
+  `isOnsale` TINYINT(4) DEFAULT NULL COMMENT '是否上架，默认1，表示上架，0表示未上架',
+  `purchase` INT(11) DEFAULT NULL COMMENT '限购数',
+  `skuCustom` VARCHAR(300) DEFAULT NULL COMMENT 'sku自定义',
+  `productDesc` VARCHAR(300) DEFAULT NULL COMMENT '商品描述',
+  `sortNum` INT(11) DEFAULT NULL COMMENT '商品排序',
+  `createTime` DATETIME DEFAULT NULL COMMENT '创建时间',
+  `updateTime` DATETIME DEFAULT NULL COMMENT '修改时间',
+  `status` TINYINT(4) DEFAULT '0' COMMENT '状态 默认0，表示未删除，-1表示删除状态',
+  PRIMARY KEY (`productId`)
+) ENGINE=MYISAM AUTO_INCREMENT=67 DEFAULT CHARSET=utf8
+
+-- ----------------------------
+-- Records of t_product
+-- ----------------------------

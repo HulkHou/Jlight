@@ -13,6 +13,10 @@ productApp.service('productService', ['$http', '$q', 'baseService',
                 var url = _ctx + '/product/detail';
                 return baseService.post(url,ProductId);
             },
+            getProductCate: function() {
+                var url = _ctx + '/productCate/getProductCate';
+                return baseService.post(url);
+            },
             editProduct: function(product) {
                 var url = _ctx + '/product/edit';
                 return baseService.post(url,product);
